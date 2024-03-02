@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Calculator';
+    src:url('Calculator.ttf') format(truetype);
+    font-weight: bolder;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(157, 235, 54);
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 470px;
+    width: 350px;
+    background-color: rgb(65, 64, 64);
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px black;
+}
+
+div#visor{
+    margin-bottom: 30px;
+}
+
+div#visor > input{
+    position: relative;
+    margin-top: 40px;
+    width: 80%;
+    left: 9%;
+    background-color: rgba(5, 150, 36, 0.404);
+    opacity: 80%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 4em;
+    text-align: right;
+    font-family: 'Calculator', Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+form > div.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 3px;
+}
+
+form > div.botoes > input{
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgb(48, 47, 47);
+}
+
+
+div#limpar{
+    display: flex;
+    justify-content: left;
+    padding-left: 12px;
+    
+}
+
+input#btlimpar{
+    background-color: rgb(199, 40, 40);
+    color: white;
+}
+
+input#btlimpar,input#btpon{
+    text-align: center;
+    height: 56px;
+    width: 73px;
+}
+
+input#enviar{
+    background-color: orange;
+    color: white;
+}
